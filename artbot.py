@@ -9,7 +9,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
-client = OpenAI()
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 # The number of times to process the entire CSV file
 run_count = 1
